@@ -8,7 +8,7 @@ async function create(insertOrder) {
     `INSERT INTO tb_order (od_status,od_active,od_sell,od_address,od_phone,od_date,create_by,create_date)
      VALUES (
         '${insertOrder.od_status}',
-        ${inserOrder.od_active},
+        ${insertOrder.od_active},
         ${insertOrder.od_sell},
         '${insertOrder.od_address}',
         ${insertOrder.od_phone},

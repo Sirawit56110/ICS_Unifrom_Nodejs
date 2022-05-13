@@ -26,14 +26,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/insert-Size",
+					"raw": "http://localhost:3000/insert-Color",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"insert-Size"
+						"insert-Color"
 					]
 				}
 			},
@@ -94,14 +94,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/insert-Pattern",
+					"raw": "http://localhost:3000/insert-Figure",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"insert-Pattern"
+						"insert-Figure"
 					]
 				}
 			},
@@ -256,7 +256,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"pt_name\": \"ผ้ากำมะหยี่\",\r\n    \"pt_status\": true,\r\n    \"update_by\": \"test\",\r\n    \"update_date\": \"2022-05-13\",\r\n    \"pt_id\":1\r\n}",
+					"raw": "{\r\n    \"cl_name\": \"สีคราม\",\r\n    \"cl_status\": true,\r\n    \"update_by\": \"test\",\r\n    \"update_date\": \"2022-05-13\",\r\n    \"cl_id\":4\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -264,14 +264,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/insert-Pattern",
+					"raw": "http://localhost:3000/update-Color",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"insert-Pattern"
+						"update-Color"
 					]
 				}
 			},
@@ -545,7 +545,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/delete-Pattern/1",
+					"raw": "http://localhost:3000/delete-Pattern/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -553,7 +553,7 @@
 					"port": "3000",
 					"path": [
 						"delete-Pattern",
-						"1"
+						"6"
 					]
 				}
 			},
@@ -571,7 +571,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/delete-Product/3",
+					"raw": "http://localhost:3000/delete-Product/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -579,7 +579,7 @@
 					"port": "3000",
 					"path": [
 						"delete-Product",
-						"3"
+						"6"
 					]
 				}
 			},
@@ -597,7 +597,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/delete-ProductList/1",
+					"raw": "http://localhost:3000/delete-ProductList/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -605,7 +605,7 @@
 					"port": "3000",
 					"path": [
 						"delete-ProductList",
-						"1"
+						"5"
 					]
 				}
 			},
@@ -649,7 +649,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/delete-OrderDetail/1",
+					"raw": "http://localhost:3000/delete-OrderDetail/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -657,7 +657,7 @@
 					"port": "3000",
 					"path": [
 						"delete-OrderDetail",
-						"1"
+						"2"
 					]
 				}
 			},
@@ -751,7 +751,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"gd_name\":\"ชาย\",\r\n    \"cl_name\":\"\",\r\n    \"pt_name\":\"\",\r\n    \"fg_name\":\"\",\r\n    \"sz_name\":\"\",\r\n    \"pageon\": 2,\r\n    \"pagesize\":3\r\n}",
+					"raw": "{\r\n    \"gd_name\":\"ชาย\",\r\n    \"cl_name\":\"\",\r\n    \"pt_name\":\"\",\r\n    \"fg_name\":\"\",\r\n    \"sz_name\":\"\",\r\n    \"pageon\": 10,\r\n    \"pagesize\":3\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

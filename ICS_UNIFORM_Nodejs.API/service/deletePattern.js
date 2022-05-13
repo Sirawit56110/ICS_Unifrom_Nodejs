@@ -5,7 +5,7 @@ const config = require('../config');
 
 async function deletes(pt_id) {
     const result = await db.query(
-    `DELETE FROM tb_pattren 
+    `DELETE FROM tb_pattern 
     WHERE pt_id = ${pt_id}`
     );
     

@@ -6,7 +6,7 @@ async function update(updateOrder) {
     const result = await db.query(
     `UPDATE  tb_order 
     SET od_status='${updateOrder.od_status}',
-    od_active= ${inserOrder.od_active},
+    od_active= ${updateOrder.od_active},
     od_sell= '${updateOrder.od_sell}',
     od_address= '${updateOrder.od_address}',
     od_phone = ${updateOrder.od_phone},
