@@ -1,9 +1,7 @@
-const users = require('./db')
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const getGender = require('./routes/getGender');
 const insertColor = require('./routes/insertColor');
 const insertPattern = require('./routes/insertPattern');
 const insertFigure = require('./routes/insertFigure');
@@ -27,6 +25,10 @@ const deleteProductList = require('./routes/deleteProductList');
 const selectColor = require('./routes/selectColor');
 const selectPattern = require('./routes/selectPattern');
 const selectFigure = require('./routes/selectFigure');
+const selectProductlist = require('./routes/selectProductlist');
+const selectOrderDetail = require('./routes/selectOrderDetail');
+const selectOrder = require('./routes/selectOrder');
+
 app.use(express.json());
 app.use(
     express.urlencoded({
@@ -37,16 +39,6 @@ app.use(
 app.get("/", (req, res) => {
     res.json({ message: "ok" });
 });
-
-/*app.get('/users', (req, res) => {
-    try {
-        res.json(await getGendeer.getMultiple(req.query.page));
-    } catch (err) {
-        console.error(`Error while getting programming languages `, err.message);
-        next(err);
-    }
-})*/
-
 
 app.use("/insert-Color", insertColor);
 app.use("/insert-Pattern", insertPattern);
@@ -71,6 +63,10 @@ app.use("/delete-ProductList", deleteProductList);
 app.use("/select-Color", selectColor);
 app.use("/select-Pattern", selectPattern);
 app.use("/select-Figure", selectFigure);
+app.use("/select-Productlist", selectProductlist);
+app.use("/select-OrderDetail", selectOrderDetail);
+app.use("/select-Order", selectOrder);
+
 app.listen(port, () => {
     console.log('Starting node.js at port '+ port);
 });

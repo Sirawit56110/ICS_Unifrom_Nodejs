@@ -2,7 +2,6 @@ const db = require('./db_context');
 const helper = require('../helper');
 const config = require('../config');
 
-
 async function update(updateOrderDetail) {
     const result = await db.query(
     `UPDATE  tb_order_detail 
